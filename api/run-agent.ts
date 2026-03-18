@@ -1,5 +1,5 @@
-import { runAgent } from "../agent.js";
-import { sendEmail } from "../email.js";
+import { runAgent } from "../src/agent";
+import { sendEmail } from "../src/email";
 
 export default async function handler(req: any, res: any) {
   try {

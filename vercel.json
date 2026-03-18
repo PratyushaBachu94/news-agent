@@ -1,6 +1,12 @@
 {
-    "crons": [
-      { "path": "/api/run-agent", "schedule": "0 13 * * *" },
-      { "path": "/api/run-agent", "schedule": "0 22 * * *" }
-    ]
-  }
+  "buildCommand": "npm run build",
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "crons": [
+    { "path": "/api/run-agent", "schedule": "0 13 * * *" },
+    { "path": "/api/run-agent", "schedule": "0 22 * * *" }
+  ]
+}

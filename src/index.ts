@@ -1,8 +1,8 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import { runAgent } from "./agent.js";
-import { sendEmail } from "./email.js";
+import { runAgent } from "./agent";
+import { sendEmail } from "./email";
 
 async function main() {
   const result = await runAgent();

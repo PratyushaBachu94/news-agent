@@ -1,5 +1,5 @@
 import OpenAI from "openai";
-import { getTechNews } from "./tools.js";
+import { getTechNews } from "./tools";
 
 // ✅ Create OpenAI client
 const client = new OpenAI({
