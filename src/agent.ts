@@ -2,11 +2,12 @@ import OpenAI from "openai";
 import { getTechNews } from "./tools";
 
 // ✅ Create OpenAI client
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
 
 export async function runAgent() {
+  const client = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
+  
   try {
     console.log("🧠 Running AI Agent...");
 

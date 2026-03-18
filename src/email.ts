@@ -1,8 +1,9 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+
 
 export async function sendEmail(newsItems: any[]) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   console.log("📧 Sending email...");
 
   const htmlContent = `
