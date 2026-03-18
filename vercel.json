@@ -1,5 +1,4 @@
 {
-  "buildCommand": "npm run build",
   "crons": [
     { "path": "/api/run-agent", "schedule": "0 13 * * *" },
     { "path": "/api/run-agent", "schedule": "0 22 * * *" }
