@@ -2,7 +2,7 @@ import { Resend } from "resend";
 
 
 
-export async function sendEmail(newsItems: any[]) {
+export async function sendEmail(newsItems, subject) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   console.log("📧 Sending email...");
 
@@ -46,7 +46,7 @@ export async function sendEmail(newsItems: any[]) {
   const response = await resend.emails.send({
     from: "onboarding@resend.dev",
     to: "pratz.bachu@gmail.com",
-    subject: "🧠 Daily Tech Brief",
+    subject: subject,
     html: htmlContent,
   });
 
