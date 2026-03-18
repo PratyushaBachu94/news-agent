@@ -8,7 +8,10 @@ async function main() {
   const result = await runAgent();
   console.log("\n🧠 AI NEWS BRIEF:\n");
   console.log(result);
-  await sendEmail(result || "No updates today");
+  await sendEmail(
+    result || ["No updates today"],
+    "Tech News Brief"
+  );
 }
 
 main();
